@@ -101,7 +101,7 @@ def time_stats(df,city,month,day):
 
 
     # TO DO: display the most common start hour
-    df['hour'] = df['Start Time'].dt.hour
+    df['hour'] = df['Start Time'].dt.hour #convert start time to hour and create new column hour
     hour_most = df['hour'].mode()[0]
     print('The most common start hour of bike share usage in {} during month <{}> on day <{}> is: {}.'.format(city,month,day,hour_most))
 
