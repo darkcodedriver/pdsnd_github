@@ -7,6 +7,10 @@ Introduction to Python Project for Udacity Course "Programming for Data Science"
 
 ### Description
 The code analysis bikeshare data from 3 major US cities depending on user input and displays the results in the command prompt.
+User input specifies:
+    - City to be anaylzed regarding Bike Share Data
+    - Month to be selected
+    - Day(s) to be selected
 
 ### Files used
 bikeshare.py
