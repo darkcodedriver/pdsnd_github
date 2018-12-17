@@ -21,6 +21,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    #Handling Value Errors of user input
     while True:
         try:
             city = str(input('Please choose a city: Chicago, New York City, Washington: ')).lower()
@@ -103,7 +104,7 @@ def time_stats(df,city,month,day):
 
 
     # TO DO: display the most common start hour
-    df['hour'] = df['Start Time'].dt.hour
+    df['hour'] = df['Start Time'].dt.hour #convert start time to hour and create new column hour
     hour_most = df['hour'].mode()[0]
     print('The most common start hour of bike share usage in {} during month <{}> on day <{}> is: {}.'.format(city,month,day,hour_most))
 
@@ -177,6 +178,7 @@ def user_stats(df,city):
     print('-'*40)
 
 def show_raw(df):
+    """ function showing raw data to user if requested"""
     valid=['Yes','yes','y','ye','YE','Ye','YES'] # valid input for yes
     invalid=['No','NO','no','n']# valid input for no
     start=0
