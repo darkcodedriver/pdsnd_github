@@ -175,6 +175,7 @@ def user_stats(df,city):
     print('-'*40)
 
 def show_raw(df):
+    """ function showing raw data to user if requested"""
     valid=['Yes','yes','y','ye','YE','Ye','YES'] # valid input for yes
     invalid=['No','NO','no','n']# valid input for no
     start=0
